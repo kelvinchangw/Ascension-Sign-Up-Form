@@ -1,0 +1,161 @@
+/* ::root {
+} */
+
+.company {
+    color: rgb(149, 44, 255);
+    position: absolute;
+    margin-left: 1.4rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+* {
+    font-family: 'Roboto Mono';
+}
+
+body {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+.picture {
+    background-color: rgb(26, 26, 26);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 40vw;
+}
+
+.animated {
+    display: block;
+    position: relative;
+    top: 10rem;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 4rem;
+    position: relative;
+    top: 12rem;
+    display: flex;
+    justify-content: center;
+    /* background-color: rgba(0, 0, 0, 0.639); */
+    background-color: rgb(0,0,0,0.75);
+    padding: 1rem 0 2rem 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.right {
+    width: 60vw;
+    height: 100vh;
+    background-color: rgb(49, 40, 26)
+}
+
+.top {
+    font-size: 2.4rem;
+    margin: 7rem 3rem 0 3rem;
+}
+
+.middle {
+    font-size: 1.2rem;
+    background-color: rgb(26, 26, 26);
+    margin: 2rem 0 0 0;
+    padding: 3.6rem 0 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.create-account {
+    padding: 1.2rem 1rem;
+    width: max-content;
+    background-color: rgb(149, 44, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .1s ease-out;
+    user-select: none;
+    margin-bottom: 1.6rem;
+}
+
+.create-account:hover {
+    letter-spacing: 3.8px;
+    width: max-content;
+}
+
+.create-account:active {
+    transform: scale(.96);
+    background-color: rgb(116, 36, 197);
+}
+
+.existing-account {
+    color: rgb(165, 165, 165);
+}
+
+.existing-login {
+    color: rgb(149, 44, 255);
+    transition: all .1s ease-out;
+    cursor: pointer;
+}
+
+.existing-login:hover {
+    transform: scale(1.02);
+}
+
+.bot {
+    display: flex;
+    flex-direction: column;
+    padding: 1.6rem 0 3.6rem 3rem;
+    background-color: rgb(26, 26, 26);
+}
+
+label {
+    font-size: .75rem;
+    padding-bottom: .2rem;
+}
+
+input {
+    height: 1.6rem;
+    background-color: rgb(63, 63, 63);
+    color: rgb(165, 165, 165);
+    transition: all .16s ease-out;
+    /* border: none; */
+    border-radius: 2px;
+    margin-bottom: 4px;
+    border: 1px solid rgb(0,0,0,.4);
+    box-sizing: border-box;
+}
+
+input:focus {
+    color: rgb(165, 165, 165);
+    border: 1.2px solid violet;
+    outline: none;
+    box-shadow: 0 0 5px rgb(0,0,0,.3);
+  }  
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 35%;
+}
+
+form {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px 80px;
+}
+
+.top,
+.middle,
+.logo {
+    color: rgb(165, 165, 165);
+}
+
+/* Right side */
+/* .top,
+.middle,
+.bot {
+
+} */
