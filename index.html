@@ -5,7 +5,6 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
     <title>Sign up</title>
@@ -17,40 +16,40 @@
             Ascension™
         </h1>
         <div class="picture">
-            <svg class="animated" id="freepik_stories-deconstructed-robot" xmlns="http://www.w3.org/2000/svg"
+            <svg class="animated" id="freepik-stories-deconstructed-robot" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 500 500" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns:svgjs="http://svgjs.com/svgjs">
                 <style>
-                    svg#freepik_stories-deconstructed-robot:not(.animated) .animable {
+                    svg#freepik-stories-deconstructed-robot:not(.animated) .animable {
                         opacity: 0;
                     }
 
-                    svg#freepik_stories-deconstructed-robot.animated #freepik--code-2--inject-48 {
+                    svg#freepik-stories-deconstructed-robot.animated #freepik--code-2--inject-48 {
                         animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideLeft;
                         animation-delay: 0s;
                     }
 
-                    svg#freepik_stories-deconstructed-robot.animated #freepik--face-2--inject-48 {
+                    svg#freepik-stories-deconstructed-robot.animated #freepik--face-2--inject-48 {
                         animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) fadeIn;
                         animation-delay: 0s;
                     }
 
-                    svg#freepik_stories-deconstructed-robot.animated #freepik--face-3--inject-48 {
+                    svg#freepik-stories-deconstructed-robot.animated #freepik--face-3--inject-48 {
                         animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideUp;
                         animation-delay: 0s;
                     }
 
-                    svg#freepik_stories-deconstructed-robot.animated #freepik--face-1--inject-48 {
+                    svg#freepik-stories-deconstructed-robot.animated #freepik--face-1--inject-48 {
                         animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideUp;
                         animation-delay: 0s;
                     }
 
-                    svg#freepik_stories-deconstructed-robot.animated #freepik--Graphics--inject-48 {
+                    svg#freepik-stories-deconstructed-robot.animated #freepik--Graphics--inject-48 {
                         animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideDown;
                         animation-delay: 0s;
                     }
 
-                    svg#freepik_stories-deconstructed-robot.animated #freepik--code-1--inject-48 {
+                    svg#freepik-stories-deconstructed-robot.animated #freepik--code-1--inject-48 {
                         animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideLeft;
                         animation-delay: 0s;
                     }
@@ -843,30 +842,36 @@
                 Join the advancement.
             </h1>
             <div class="middle">
-                <form action="#" method="post">
+                <form method="" autocomplete="off">
                     <div class="input">
-                        <label for="first_name">FIRST NAME</label>
-                        <input type="text" name="first_name" id="first_name">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="first-name">
+                        <span class="error"></span>
                     </div>
                     <div class="input">
-                        <label for="last_name">LAST NAME</label>
-                        <input type="text" name="last_name" id="last_name">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name">
+                        <span class="error"></span>
                     </div>
                     <div class="input">
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
+                        <span class="error"></span>
                     </div>
                     <div class="input">
-                        <label for="phone_number">PHONE</label>
-                        <input type="tel" name="phone_number" id="phone_number">
+                        <label for="phone-number">PHONE</label>
+                        <input type="tel" name="phone-number" id="phone-number">
+                        <span class="error"></span>
                     </div>
                     <div class="input">
-                        <label for="user_password">PASSWORD</label>
-                        <input type="password" name="user_password" id="user_password">
+                        <label for="user-password">PASSWORD</label>
+                        <input type="password" name="user-password" id="user-password">
+                        <span class="error"></span>
                     </div>
                     <div class="input">
-                        <label for="user_password_confirm">CONFIRM PASSWORD</label>
-                        <input type="password" name="user_password_confirm" id="user_password_confirm">
+                        <label for="user-password-confirm">CONFIRM PASSWORD</label>
+                        <input type="password" name="user-password-confirm" id="user-password-confirm">
+                        <span class="error"></span>
                     </div>
                 </form>
             </div>
@@ -883,6 +888,7 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

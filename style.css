@@ -72,12 +72,21 @@ body {
 .create-account {
     padding: 1.2rem 1rem;
     width: max-content;
-    background-color: rgb(149, 44, 255);
+    /* background-color: rgb(149, 44, 255); */
+    background-color: rgb(74, 0, 149);
     border-radius: 4px;
     cursor: pointer;
     transition: all .1s ease-out;
     user-select: none;
     margin-bottom: 1.6rem;
+    border-style: none;
+    /* Make it unclickable until all fields are filled */
+    pointer-events: none;
+}
+
+.create-account.enabled {
+    background-color: rgb(149, 44, 255);
+    pointer-events: auto;  
 }
 
 .create-account:hover {
@@ -90,6 +99,11 @@ body {
     background-color: rgb(116, 36, 197);
 }
 
+#user-password-confirm {
+    background-color: rgb(40, 40, 40);
+    pointer-events: none;
+}
+
 .existing-account {
     color: rgb(165, 165, 165);
 }
@@ -98,6 +112,7 @@ body {
     color: rgb(149, 44, 255);
     transition: all .1s ease-out;
     cursor: pointer;
+    user-select: none;
 }
 
 .existing-login:hover {
@@ -118,14 +133,20 @@ label {
 
 input {
     height: 1.6rem;
-    background-color: rgb(63, 63, 63);
-    color: rgb(165, 165, 165);
+    background-color: rgb(70, 70, 70);
+    color: rgb(172, 172, 172);
     transition: all .16s ease-out;
     /* border: none; */
     border-radius: 2px;
     margin-bottom: 4px;
     border: 1px solid rgb(0,0,0,.4);
     box-sizing: border-box;
+}
+
+.error {
+    font-size: .75rem;
+    color: rgb(255, 81, 81);
+    user-select: none;
 }
 
 input:focus {
@@ -141,6 +162,11 @@ input:focus {
     width: 35%;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+
 form {
     display: flex;
     flex-flow: row wrap;
@@ -150,7 +176,7 @@ form {
 .top,
 .middle,
 .logo {
-    color: rgb(165, 165, 165);
+    color: rgb(172, 172, 172);
 }
 
 /* Right side */
