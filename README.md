@@ -1,5 +1,9 @@
 👉 [Live preview](https://weissey.github.io/odin-sign-up-form/)
 
+  <a href="https://weissey.github.io/odin-sign-up-form/">
+    <img src="./assets/Ascension%20Logo.svg" alt="Logo" width="100">
+  </a>
+
 <!-- PROJECT -->
 ## Built with:
 - ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
