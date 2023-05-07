@@ -1,9 +1,6 @@
-<<<<<<< Updated upstream
 👉 [Live preview](https://weissey.github.io/odin-sign-up-form/)
 
-  <a href="https://weissey.github.io/odin-sign-up-form/">
-    <img src="./assets/Ascension%20Logo.svg" alt="Logo" width="100">
-  </a>
+![Ascension Logo]("/./assets/Ascension-logo.svg")
 
 <!-- PROJECT -->
 ## Built with:
@@ -76,8 +73,3 @@
 </a>
 */
 -->
-=======
-👉 [View Demo](https://weissey.github.io/odin-sign-up-form/)
-
-Illustrative vectors was provided by [Storyset](https://storyset.com/technology)
->>>>>>> Stashed changes
