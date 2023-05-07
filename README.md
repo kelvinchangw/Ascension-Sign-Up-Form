@@ -1,6 +1,19 @@
-👉 [Live preview](https://weissey.github.io/odin-sign-up-form/)
-
-![Ascension Logo]("/./assets/Ascension-logo.svg")
+<div align="center">
+  <a href="https://weissey.github.io/odin-sign-up-form/">
+      <img src="Assets/Ascension-logo.svg" alt="Logo" width="460">
+  </a>
+  <h3 align="center"><b>Sign-up Form</b></h3>
+  <p align="center">
+    For an enigmatic brand, Ascension Cybernetics™
+    <br />
+    <br />
+    <a href="https://weissey.github.io/odin-sign-up-form/">View Demo</a>
+    ·
+    <a href="https://weissey.github.io/odin-sign-up-form/issues">Report Bugs</a>
+    ·
+    <a href="https://weissey.github.io/odin-sign-up-form/issues">Request Features</a>
+  </p>
+</div>
 
 <!-- PROJECT -->
 ## Built with:
