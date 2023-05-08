@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://weissey.github.io/odin-sign-up-form/">
-      <img src="Assets/Ascension-logo.svg" alt="Logo" width="460">
+      <img src="Assets/Ascension-logo.svg" alt="Logo" width="300">
   </a>
   <h3 align="center"><b>Sign-up Form</b></h3>
   <p align="center">
@@ -31,7 +31,7 @@
 
 <br>
 
-## Features
+## Key Features
 
 - Developed using **modern JavaScript** techniques
 - Effectively **evaluates form input** with essential validation
@@ -40,7 +40,7 @@
 
 <br>
 
-## Outcome
+## Project Outcomes
 
 - Utilized HTML5 **semantic elements** for enhanced readability and structure
 - Employed CSS3 **flexbox** for layout management
@@ -50,11 +50,11 @@
 
 <br>
 
-## What I learned
+## Lessons Learned
 
-- Gained experience in form handling using **JavaScript**
-- Mastered the **ternary** operator for more concise code
-- Acquired numerous minor skills and insights
+- Form handling in JavaScript
+- Ternary operator proficiency
+- Valuable minor skills and insights
 
 <br>
 
