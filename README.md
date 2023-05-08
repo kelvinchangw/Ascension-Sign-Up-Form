@@ -9,9 +9,9 @@
     <br />
     <a href="https://weissey.github.io/odin-sign-up-form/">View Demo</a>
     ·
-    <a href="https://weissey.github.io/odin-sign-up-form/issues">Report Bugs</a>
+    <a href="https://github.com/Weissey/odin-sign-up-form/issues">Report Bugs</a>
     ·
-    <a href="https://weissey.github.io/odin-sign-up-form/issues">Request Features</a>
+    <a href="https://github.com/Weissey/odin-sign-up-form/issues">Request Features</a>
   </p>
 </div>
 
