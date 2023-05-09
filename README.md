@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://weissey.github.io/odin-sign-up-form/">
+  <a href="https://weissey.github.io/Ascension-Sign-Up-Form/">
       <img src="Assets/Ascension-logo.svg" alt="Logo" width="300">
   </a>
   <h3 align="center"><b>Sign-up Form</b></h3>
@@ -7,11 +7,11 @@
     For an enigmatic brand, Ascension Cybernetics™
     <br />
     <br />
-    <a href="https://weissey.github.io/odin-sign-up-form/">View Demo</a>
+    <a href="https://weissey.github.io/Ascension-Sign-Up-Form/">View Demo</a>
     ·
-    <a href="https://github.com/Weissey/odin-sign-up-form/issues">Report Bugs</a>
+    <a href="https://weissey.github.io/Ascension-Sign-Up-Form/issues">Report Bugs</a>
     ·
-    <a href="https://github.com/Weissey/odin-sign-up-form/issues">Request Features</a>
+    <a href="https://weissey.github.io/Ascension-Sign-Up-Form/issues">Request Features</a>
   </p>
 </div>
 
