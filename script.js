@@ -1,27 +1,18 @@
-const password = document.querySelector("#user-password"),
-      passwordConfirm = document.querySelector("#user-password-confirm"),
+// Declarations
+const fName = document.querySelector("#first-name"),
+      lName = document.querySelector("#last-name"),
       email = document.querySelector("#email"),
+      phone = document.querySelector("#phone-number"),
+      password = document.querySelector("#user-password"),
+      passwordConfirm = document.querySelector("#user-password-confirm"),
+      createBtn = document.querySelector(".create-account"),
       error = document.getElementsByClassName("error"),
       inputs = document.querySelectorAll("input"),
-      createBtn = document.querySelector(".create-account"),
-      phone = document.querySelector("#phone-number"),
-      inputValid = Array(inputs.length).fill(false),
-      fName = document.querySelector("#first-name"),
-      lName = document.querySelector("#last-name");
+      inputValid = Array(inputs.length).fill(false);
 
-function displayError() {
-    for (let i = 0; i < inputs.length; i++) {
-        console.log(inputs[i]);
-        console.log(error[i]);
-    }
-}
-
+// Dynamically update error display fields depending on if input field is filled or empty.
 for (let i = 0; i < inputs.length; i++) {
-    inputs[i].addEventListener("focus", () => {
-        error[i].textContent = "";
-    });
-
-    inputs[i].addEventListener("blur", () => {
+    inputs[i].addEventListener("input", () => {
         if (inputs[i].value !== "") {
             error[i].textContent = "";
         }
@@ -31,6 +22,7 @@ for (let i = 0; i < inputs.length; i++) {
     });
 }
 
+// If every input is filled and valid, turn on the create account button.
 function updateCreateBtn() {
     if (inputValid.every(valid => valid)) {
         createBtn.classList.add("enabled");
@@ -39,17 +31,19 @@ function updateCreateBtn() {
     }
 }
 
-fName.addEventListener("blur", (e) => {
+// Check if input is filled. If so, turn the inputValid array index to true.
+fName.addEventListener("input", (e) => {
     e.target.value.length === 0 ? inputValid[0] = false : inputValid[0] = true;
     updateCreateBtn();
 });
 
-lName.addEventListener("blur", (e) => {
+lName.addEventListener("input", (e) => {
     e.target.value.length === 0 ? inputValid[1] = false : inputValid[1] = true;
     updateCreateBtn();
 })
 
-email.addEventListener("blur", (e) => {
+// Check if email input is valid according to regex.
+email.addEventListener("input", (e) => {
     // Using Abstract API's email validation regex, we are able to check for the email field
     // https://www.abstractapi.com/tools/email-regex-guide
     if (!(e.target.value.match("^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"))) {
@@ -62,7 +56,8 @@ email.addEventListener("blur", (e) => {
     updateCreateBtn();
 });
 
-phone.addEventListener("blur", (e) => {
+// Check if phone input is valid by seeing if there are any non integers.
+phone.addEventListener("input", (e) => {
     if (!(e.target.value.match(/^[0-9]+$/)) || e.target.value.length < 10) {
         error[3].textContent = "INVALID NUMBER";
         inputValid[3] = false;
@@ -73,7 +68,8 @@ phone.addEventListener("blur", (e) => {
     updateCreateBtn();
 });
 
-password.addEventListener("blur", (e) => {
+// Check if password is more than 10 characters.
+password.addEventListener("input", (e) => {
     if (e.target.value.length < 10 && e.target.value.length !== 0) {
         error[4].textContent = "PASSWORD MINIMUM 10 CHARACTERS";
         inputValid[4] = false;
@@ -91,7 +87,8 @@ password.addEventListener("blur", (e) => {
     updateCreateBtn();
 });
 
-passwordConfirm.addEventListener("blur", (e) => {
+// Check if password is valid. If so, open the password confirmation field. Also checks if passwords match.
+passwordConfirm.addEventListener("input", (e) => {
     if (password.value.length !== 0 && !(password.value.length < 10)) {
         if (e.target.value !== password.value) {
             error[5].textContent = "PASSWORDS MUST MATCH";
@@ -108,17 +105,20 @@ passwordConfirm.addEventListener("blur", (e) => {
     updateCreateBtn();
 });
 
+// Enable password confirm colors/style
 function enablePasswordConfirm() {
     passwordConfirm.style.backgroundColor = "rgb(70, 70, 70)";
     passwordConfirm.style.pointerEvents = "auto";
 }
 
+// Disable password confirm colors/style
 function disablePasswordConfirm() {
     passwordConfirm.style.backgroundColor = "rgb(40, 40, 40)";
     passwordConfirm.style.pointerEvents = "none";
     passwordConfirm.value = "";
 }
 
+// Clear password confirm error field
 function mutePasswordConfirm() {
     error[5].textContent = "";
 }

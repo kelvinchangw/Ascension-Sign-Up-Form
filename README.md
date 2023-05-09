@@ -77,12 +77,5 @@
 ## Author
 
 <a href="https://linkedin.com/in/kelvinchangw" target="_blank">
-<img src="https://img.shields.io/badge/linkedin:  kelvinchangw-%2300acee.svg?color=405DE6&style=for-the-badge&logo=linkedin&logoColor=white" alt=linkedin style="margin-bottom: 5px;"/>
+  <img src="https://img.shields.io/badge/linkedin:  kelvinchangw-%2300acee.svg?color=405DE6&style=for-the-badge&logo=linkedin&logoColor=white" alt=linkedin style="margin-bottom: 5px;"/>
 </a>
-
-<!--
-<a href="https://yourwebsite.com" target="_blank">
-<img src="https://img.shields.io/badge/website-%2300acee.svg?style=for-the-badge&logo=internet-explorer&logoColor=white" alt=website style="margin-bottom: 5px;"/>
-</a>
-*/
--->
