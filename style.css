@@ -26,6 +26,23 @@ body {
 }
 
 
+/* Fade left animation for input sections */
+@keyframes slideLeftFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.middle,
+.bot {
+    animation: slideLeftFadeIn 1s;
+}
+
 /* Animated visual */
 .picture {
     background-color: rgb(26, 26, 26);
