@@ -123,6 +123,7 @@ form {
     width: max-content;
     background-color: rgb(74, 0, 149);
     border-radius: 4px;
+    box-sizing: border-box;
     cursor: pointer;
     transition: all .1s ease-out;
     user-select: none;
@@ -151,7 +152,6 @@ form {
 /* Existing account login */
 .existing-login {
     color: rgb(149, 44, 255);
-    transition: all .1s ease-out;
     cursor: pointer;
     user-select: none;
 }
@@ -195,4 +195,59 @@ input:focus {
     font-size: .75rem;
     color: rgb(255, 81, 81);
     user-select: none;
+}
+
+
+/* For devices smaller than 768px, e.g. mobile devices */
+@media (max-width: 768px) {
+    /* Stack container children vertically */
+    .container {
+        flex-direction: column;
+    }
+
+    /* Full width for picture and right sections */
+    .picture,
+    .right {
+        width: 100%;
+    }
+
+    /* Adjust top margin for the join message */
+    .top {
+        margin-top: 2rem;
+    }
+
+    /* Adjust form layout */
+    form {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Full width for input fields */
+    .input {
+        width: 72%;
+    }
+
+    /* Expands to full input field div, increase height for mobile users */
+    input {
+        height: 32px;
+        width: 100%;
+    }
+
+    /* Adjust create account button */
+    .create-account {
+        text-align: center;
+        transition: transform 0.1s ease-out;
+    }
+
+    /* New animation of button popping out when tapped */
+    .create-account:active {
+        transform: scale(1.1);
+        background-color: rgb(116, 36, 197);
+        letter-spacing: normal;
+    }
+
+    /* Disables letter spacing effect */
+    .create-account:hover {
+        letter-spacing: normal;
+    }
 }
