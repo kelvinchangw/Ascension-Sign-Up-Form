@@ -9,9 +9,9 @@
     <br />
     <a href="https://weissey.github.io/Ascension-Sign-Up-Form/">View Demo</a>
     ·
-    <a href="https://weissey.github.io/Ascension-Sign-Up-Form/issues">Report Bugs</a>
+    <a href="https://github.com/Weissey/Ascension-Sign-Up-Form/issues">Report Bugs</a>
     ·
-    <a href="https://weissey.github.io/Ascension-Sign-Up-Form/issues">Request Features</a>
+    <a href="https://github.com/Weissey/Ascension-Sign-Up-Form/issues">Request Features</a>
   </p>
 </div>
 
